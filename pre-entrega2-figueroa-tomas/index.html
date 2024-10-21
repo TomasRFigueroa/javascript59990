@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solidaridad Activa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Solidaridad Activa</h1>
+        <nav>
+            <ul>
+                <li><a href="#nosotros">¿Quiénes somos?</a></li>
+                <li><a href="#donar">Donar</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="nosotros">
+        <h2>¿Quiénes somos?</h2>
+        <p>Solidaridad Activa es un grupo comprometido con la ayuda a las personas más necesitadas del barrio de emergencia "Carcova". Fundada en 2021, nuestra organización trabaja de manera ininterrumpida cada sábado, brindando apoyo a la comunidad a través de diversas actividades.
+            Nos dedicamos a preparar desayunos nutritivos, entregamos donaciones y ofrecemos un espacio de recreación y aprendizaje para los más jóvenes. A través de juegos y talleres, fomentamos el desarrollo de habilidades y el fortalecimiento de la confianza en sí mismos.
+            Como ONG, operamos de manera independiente y sin el respaldo de ninguna organización externa. Esto hace que cada contribución, por pequeña que sea, tenga un impacto significativo en la vida de quienes atendemos. Tu ayuda es fundamental para continuar con nuestra misión y mejorar la calidad de vida en Carcova. ¡Únete a nosotros y sé parte del cambio!</p>
+    </section>
+
+
+    <section id="donar">
+        <h2>Donar</h2>
+        <form id="donationForm">
+            <label for="amount">Cantidad a donar:</label>
+            <input type="number" id="amount" required>
+            <button type="submit">Donar</button>
+        </form>
+        <p id="result"></p>
+        <h3>Total donaciones del mes: <span id="totalDonaciones">0</span></h3>
+    </section>
+    
+    <section id="simulador">
+        <h2>Simulador de Donaciones</h2>
+        <button id="simuladorBtn">Iniciar Simulación</button>
+    </section>
+    
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>2024 Solidaridad Activa</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
