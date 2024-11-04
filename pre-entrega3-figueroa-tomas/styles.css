@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #d34598;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* Usamos inline-block para eliminar el espacio extra alrededor */
+    margin: 0; /* Eliminamos el margen extra que causa el espacio blanco */
+}
+
+nav ul li a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado */
+    font-weight: bold;
+    padding: 10px 15px; /* Espaciado interno */
+    background-color: #4CAF50; /* Color de fondo del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animación suave */
+    display: inline-block; /* Convertimos el enlace en un bloque en línea */
+}
+
+nav ul li a:hover {
+    background-color: #45a049; /* Color de fondo al pasar el ratón */
+    transform: scale(1.05); /* Agrandar un poco el botón */
+}
+
+nav ul li a:active {
+    background-color: #3e8e41; /* Color cuando se hace clic */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3, h4 {
+    color: #4CAF50;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f1f1f1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #d34598;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
