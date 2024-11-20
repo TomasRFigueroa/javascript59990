@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solidaridad Activa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1>Solidaridad Activa</h1>
+        <nav>
+            <ul>
+                <li><a href="#nosotros">¿Quiénes somos?</a></li>
+                <li><a href="#donar">Donar</a></li>
+                <li><a href="#simulador">Simulador</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="nosotros">
+            <h2>¿Quiénes somos?</h2>
+            <p>Solidaridad Activa es un grupo comprometido con la ayuda a las personas más necesitadas del barrio de emergencia "Carcova". Fundada en 2021, nuestra organización trabaja de manera ininterrumpida cada sábado, brindando apoyo a la comunidad a través de diversas actividades.</p>
+            <img src="C:\Users\user\Desktop\Varios\Foto soli" alt="Actividades de Solidaridad Activa">
+            <p>Nos dedicamos a preparar desayunos nutritivos, entregamos donaciones y ofrecemos un espacio de recreación y aprendizaje para los más jóvenes. A través de juegos y talleres, fomentamos el desarrollo de habilidades y el fortalecimiento de la confianza en sí mismos.</p>
+            <p>Como ONG, operamos de manera independiente y sin el respaldo de ninguna organización externa. Esto hace que cada contribución, por pequeña que sea, tenga un impacto significativo en la vida de quienes atendemos. ¡Puedes unirte a nuestra causa y ayudar a quienes más lo necesitan!</p>
+        </section>
+
+        <section id="donar">
+            <h2>Donar</h2>
+            <form id="donationForm">
+                <label for="amount">Cantidad a donar:</label>
+                <input type="number" id="amount" required>
+                <button type="submit">Donar</button>
+            </form>
+            <p id="result"></p>
+            <h3>Total donaciones del mes: <span id="totalDonaciones">0</span></h3>
+            <h4>Historial de Donaciones:</h4>
+            <ul id="historialDonaciones"></ul>
+        </section>
+
+        <section id="simulador">
+            <h2>Simulador de Donaciones</h2>
+            <button id="simuladorBtn">Iniciar Simulación</button>
+            <p id="simuladorResultado"></p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="contactForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <h4>Mensajes Recibidos:</h4>
+            <ul id="mensajesRecibidos"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Solidaridad Activa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
+
